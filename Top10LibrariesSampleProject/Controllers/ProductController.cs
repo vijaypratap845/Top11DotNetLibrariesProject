@@ -33,6 +33,7 @@ namespace Top10LibrariesSampleProject.Controllers
            
             try
             {
+                _logger.LogError($"Something went wrong:");
                 var result = await _product.GetAllProducts();
                 return Ok(result);
             }
