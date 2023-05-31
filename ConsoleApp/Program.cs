@@ -4,10 +4,10 @@
 using BenchmarkDotNet.Running;
 using ConsoleApp;
 
-var summary = BenchmarkRunner.Run(typeof(Program).Assembly);
+//var summary = BenchmarkRunner.Run(typeof(Program).Assembly);
 
 //// Run benchmarking on the specified type
 //var summary = BenchmarkRunner.Run<MyBenchmarks>();
 
-////Run benchmark on the specified type
-////var summary = BenchmarkRunner.Run(typeof(MyBenchmarks));
+//Run benchmark on the specified type
+var summary = BenchmarkRunner.Run(typeof(MyBenchmarks));
